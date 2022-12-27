@@ -1,8 +1,11 @@
 import 'imports.dart';
+// To import required packages, import statements are specified in imports.dart file
 
 //TODO:Remainder: Removed Half baked x86 bins, add them when we support x86 platform
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+   // Flutter needs to call native code to initialize the required data, this data is used to initalize the required functions
+ 
   await init();
   runApp(MyApp());
   if (PlatformExt.isDesktop) {
